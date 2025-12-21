@@ -1,0 +1,451 @@
+# An Optimum Guide for the Reduction of Noise using a Surface Scanner for Digitising Human Osteological Remains
+
+2015, Archaeology Data Service
+
+*This case study was produced as a component to a PhD thesis undertaken at Teesside University.*
+
+All material in this guide is available [open access](https://archaeologydataservice.ac.uk/about/policies/use-access-to-data/) under a CC-BY 4.0 licence.
+
+```{image} ads_logo.png
+:height: 50px
+:align: left
+:alt: ADS Logo
+```
+
+## 1. Background to Research for Scanning Osteological Material
+
+An increasing interest in past human behaviour and funerary practises through the likes of archaeology and forensic anthropology has resulted in a rise in the use and analysis of human remains in educational contexts. As a result, the availability of these valuable resources has decreased. What is more concerning is that the increased handling of such valuable material expedites its destruction, especially if the human remains are in poor condition. In other circumstances (especially in the US), osteological data is often repatriated which means further analysis of the skeletal remains is impossible.
+
+Although records are kept in accordance with the *Standards for Data Collection from Human Skeletal Remains* (Buikstra and Ubelaker, 1994), skeletal inventories and photographic documentation can never replace the actual human remains. This is because the two dimensional documentation of a three dimensional object has effectively lost a third of its data. Therefore, research upon inaccurate or incomplete data cannot provide results that can be trusted.
+
+Surface scanning encompasses both laser and structured light scanning. Laser scanning has primarily been used as an alternative for preservation and conservation of fragile material. Similarly in forensic anthropology, if a case has to go to court, a bone cannot be taken into the courtroom. Surface scanning allows the documentation of osteology without damaging the actual remains. These three dimensional digitisations can then be used for visualisation within the courtroom (Errickson et al 2014). The uses and a guide for laser scanning can be viewed in [Laser Scanning for Archaeology: A Guide to Good Practice](https://doi.org/10.5284/rt5g-dm24).
+
+Structured light scanners however have not been exploited with the same vigour as the laser scanning approach. This guide aims to show that this technique can obtain results with quality assurance.
+
+## 2. Focus of the Case Study
+
+With exception to the Guides recommendations on [Acquiring and Processing Laser Scanned Data](https://doi.org/10.5284/rt5g-dm24) and the metadata formats for archiving *Archiving Laser Scan Data*, as well as English Heritage's (2011) *3D Laser Scanning for Heritage: advice and guidance to users on laser scanning in archaeology and architecture* there are no standard practice guidelines for surface scanning in either archaeology or anthropology that should be followed.
+
+Therefore, for this case study the initial set-up of the surface scanning equipment and the environment where the digitising of human remains occurs was investigated to create a series of suggestions based upon the results gathered for future use. Osteological remains were used for this case study because of the recent impacts on collections as well as the possibility for creating a digital archive of metadata that can be used and accessed much easier (with an increased accuracy to photographic documentation) than the actual human remains or standard recording procedures.
+
+## 3. The Surface Scanners
+
+### 3.1 The Laser Scanner
+
+The laser scanner used in this case study was the non-contact FARO Laser Line Fusion. This is a class 2 laser which scans 640 points per line at 30 frames per second (creating 19,200 points per second). It has an accuracy of +/- 0.014mm with a standard repeatability of 0.014. The laser scanner was placed alongside the workstation to stop the movement of the base.
+
+### 3.2 The Structured Light Scanner
+
+The structured light scanner used was the non-contact PicoScan (4DDynamics, Belgium). The PicoScan consisted of a Canon EOS 1100D camera with a Pico Projector vertically mounted onto it. The projector has a resolution of 800x600 pixels with a point accuracy of 0.1mm. 
+
+## 4. Instrumental Influences on Data
+
+Instrumental errors can cause the largest inaccuracies when scanning objects. Calibration is known to reduce or eliminate most of these instrumental errors (Corsarca 2009). This may not be an issue in some disciplines however in a forensic anthropological context it is essential. For example, in architecture, the architectural details and precise behaviour of the data are deemed to be most important. Although not its intended purpose for that example, the method would nonetheless be very difficult to stand up to courtroom scrutiny (Sommers 2002) because the error rates of the measurements were not known. The general requirements for the competence of testing and calibration laboratories (International Standards Organisation 17025) is the procedure within a laboratory. This international standard also includes calibration of apparatus. A calibrated laser scanner allows the data to be measured to a known accuracy which is extremely important. Therefore, it is essential a laser scanner is calibrated correctly before use. The importance of calibration is increased when using structured light scanning. This is because absolute measurement values can only be obtained this way (figure 1).
+
+```{figure} /images/struc_light-fig_1.jpg
+:alt: Figure 1
+
+__Figure 1__: Results of a cranium with correct calibration (left) and incorrect calibration (right)
+```
+
+Following this, the appropriate settings for the laser scanner should be selected. This can be determined using the Laser Scanning for Archaeology guide section *Project Planning and Requirements*.
+
+## 5. External Influences on Data
+
+The environment in which the scanning takes place and the scanner's user can influence the results obtained throughout the scanning procedure often by creating 'noise' (figure 2). Noise in the data set is unwanted data that has to be removed through post-processing.
+
+```{figure} /images/struc_light-fig_2.jpg
+:alt: Figure 2
+
+__Figure 2__: Noise around the object shown in red
+```
+
+### 5.1. The Environment
+
+Below we suggest surroundings and an arrangement which we found worked extremely well to reduce noise in the data set.
+
+__5.1.1 Lighting__
+
+The Faro laser scanner does not record RGB and only provides a 'greyscale' data output. Although the lighting conditions throughout scanning has been known to dramatically affect some surface scanners (see below), an investigation was undertaken to determine whether the non-RGB laser scanner was affected by the surrounding lighting.
+
+```{figure} /images/struc_light-fig_3.jpg
+:alt: Figure 3
+
+__Figure 3__: Dismembered sheep bone
+```
+
+A dismembered sheep femur (figure 3) was placed within the scanning area and all the scanning parameters were kept the same. The femur was then fully digitised on both sides by the author (DE) thirty times: ten times with natural light lamps, ten times with the ambient room lighting, and ten times in complete darkness. For each scan, the point cloud was recorded, the noise was removed and the point cloud was re-recorded. This was achieved to determine whether noise was influenced by the environment's lighting conditions.
+
+```{figure} /images/struc_light-fig_4.jpg
+:alt: Figure 4
+
+__Figure 4__: Noise reduction for different lighting conditions
+```
+
+The results show (figure 4) that the room's lighting does not influence the noise collected for non-contact surface laser scanners. For the normal lighting conditions, the lowest reduction of points was 1% of the overall point cloud with the highest being 5% of the overall point cloud. Similarly, the natural light lamps smallest reduction was 1% with an average of 2% of overall points removed being noise. Scanning in the dark gave an average reduction of data of nearly half the point cloud (49%). Although this figure would suggest that lighting affects the laser scanner, the error has been established to the lack of seeing the object properly and therefore scanning the surrounding workstation by mistake. Furthermore, scanning in the dark is not recommended for obvious health and safety reasons. As a result, the authors __recommend a well-lit environment to allow proper visualisation of the object and work environment__.
+
+On the other hand, it should be noted that structured light surface scanners are affected by the particular lighting conditions. This is because the apparatus uses a camera to record the patterned light. As a result, an under exposed or over exposed image will affect the data. As discussed in 5.1 the structured light scanner will record all coloured surfaces, however this is dependent on the correct *f-stop* and aperture settings prior to the recording of data.
+
+__5.1.2 Surface Colour__
+
+A second experiment was performed regarding noise surrounding the workstation. As the object is scanned upon a workbench, it is extremely difficult not to digitise this surface and once recorded must be removed during post-processing. We chose six different non-reflective coloured card surfaces (red, yellow, green, blue, black, white) as a work surface for the bones to be placed upon. Initially each card was scanned without any objects to determine how many points it took to digitise them.
+
+Following this, the sheep femur was fully digitised sixty times (ten times on each individual coloured card) to record the reduction of noise created. The red surface had the largest fluctuation of noise, possibly because the laser is red. At its highest, 22% of points were classified as noise. At its lowest, only 2% of all points were classed as noise and the average amount of noise was 13.5% of all points. For the yellow surface the highest amount of points classified as noise for a model was 23%. The lowest amount of point reduction was 9%. Overall, the average point reduction was 16%. For the green surface the highest reduction of points for a model was 16%. The lowest reduction of points was a total of 1% noise. On average, 6% of points were classified as noise. For the blue surface plane 16% of points was the overall highest classification of noise. The lowest reduction of points was a total of 2% noise. On average, 9% of points were classified as noise. For the black surface the highest reduction of points was 5% and the lowest reduction of noise was 1%. On average, 2.5% of points were classified as noise. For the white surface the highest reduction of points due to noise was 13% and the lowest reduction of points was a total of 3%. On average, 9% of all points were classified as noise (figure 6 & 7).
+
+These results reiterate those produced by Corsarca *et al* (2009), who state;
+
+> "A darker surface will absorb light, and therefore noise is significantly reduced. On the other hand a lighter surface like white is highly reflective and is expected to create noise".
+
+The Guide to Good Practice for Laser Scanning (Section 1.4.1) also states,
+
+> "Black materials absorb the laser energy … causing any data returned to be noisy"
+
+As a result, the authors __suggest using a black background for laser scanning bones__, because the surface is harder to digitise due to the laser becoming absorbed by the colour.
+
+As an alternative, __structured light scanning can be used to record darker surfaces__. The scanner collates results based upon deformities of the patterned light as it is projected onto an object or surface. This is opposed to the laser process where the light is absorbed prior to the reflection to the charged couple device (CCD). In addition, the camera records the colour of the surface in the same process. This is the same procedure as taking a picture with a camera, hence once the aperture and f-stop is determined depending on the amount of ambient light, the image taken will create an accurate digitisation with colour overlaid onto the image. To record a dark surface the values for intensity threshold, smoothing region, and denoise region must be reduced or even set to 0. With regards to scanning osteological material, dark surfaces may need to be recorded in scenarios where the bone has been burnt or presents dark pathological changes that may need to be documented. For a lighter bone, these values should be increased.
+
+```{figure} /images/struc_light-fig_5.jpg
+:alt: Figure 5
+
+__Figure 5__: Capture of rib (centre) with noise in the foreground (right) and background (left)
+```
+
+The structured light scanner will also record everything within the scanner's field of view. Therefore, a considerable amount of background noise can be recorded (figure 5). To counteract this, within the settings the distances can be adjusted ensuring the user has control over what is being imaged by the scanner. This is a maximum and minimum distance in millimetres. Furthermore, any unwanted data that is unavoidably recorded can be removed prior to the next set of images being taken (like the FARO) and is easily removed. The user must ensure enough overlapping scans have been documented so to not affect the point cloud and ensuring reduction of accuracy is not ascertained.
+
+__5.1.3 The User__
+
+Using the previous study (4.1.2), the data was converted into line charts (figure 7). The trendline shows an improvement in the data collection process with reduced noise for each scan over time for every colour except black. It was shown that if the first scan for each colour is removed, the trendlines level out. These results are dramatically changed becoming more consistent (figure 8).
+
+```{figure} /images/struc_light-fig_6.jpg
+:alt: Figure 6
+
+__Figure 6__: Noise reduction for each coloured background
+```
+
+```{figure} /images/struc_light-fig_7-1.jpg
+:alt: Figure 7-1
+```
+```{figure} /images/struc_light-fig_7-2.jpg
+:alt: Figure 7-2
+
+__Figure 7__: The noise reduction (%) over ten scans for each coloured background
+```
+
+```{figure} /images/struc_light-fig_8-1.jpg
+:alt: Figure 8-1
+```
+```{figure} /images/struc_light-fig_8-2.jpg
+:alt: Figure 8-2
+
+__Figure 8__: The noise reduction (%) over nine scans for each coloured background with the initial scan for each removed
+```
+
+These results suggest that with each scan, the user is becoming increasingly familiar with the object and learning how to improve for the next scan. Therefore, experienced users are necessary when using the laser scanner for recording osteological material. To test this theory, we assessed whether the experience of the user and knowledge of human anatomy affected the accuracy of the scan (table 1). Three experts with different specialist knowledge were chosen to scan the same bone twice. The author also took part in this experiment. A left calcaneus of skeleton [216] from Teesside University's Anglo-Saxon skeletal collection (figure 9) was chosen because of the bone's simplistic features but complex shape. Furthermore, an actual bone was used to replicate a theoretical 'real-life' situation.
+
+```{figure} /images/struc_light-fig_9.jpg
+:alt: Figure 9
+
+__Figure 9__: A calcaneus from skeleton [216]
+```
+
+```{list-table} __Table 1__: The users and their experience
+:header-rows: 1
+
+* - 
+  - Experience with osteological material
+  - Little/no experience with osteological material
+* - Experience with the surface-scanning technique
+  - David Errickson [DE]
+  - Dr. David Hughes [DH]
+* - No experience with the surface-scanning technique
+  - Dr. Tim Thompson [TT]
+  - Brian Rankin [BR]
+```
+
+__First Scan__
+
+In the initial scan TT, BR, and DH all discussed how their thoughts were primarily focused on the equipment. For example TT mentioned that he was thinking more about the 'movement, weight, and distance' of the scanner's arm from the object. Both BR and DH commented how they found it difficult to keep the scanner's head at a constant distance from the object. Once both sides of the object were scanned, DE noted and removed the noise and merged together both sides (table 2).
+
+Interestingly, the total reduction of noise between DH, BR and TT was within 3% of each other. Furthermore, the total amount of points immediately after TT and BR's scan saw a difference of approximately 15,000 points where DH's total points after reduction was over 150,000 points more. This may have occurred because DH did not accomplish the scan in several passes and instead attempted to scan the object in one pass. DH also admitted to needing to be refreshed at using the scanner because a period of time had elapsed since he had last used the scanner. DE's noise was minimal. This is expected because of the familiarity with the equipment.
+
+All four of the users had at least one area of missing data within their models. These are areas that have remained unrecorded throughout the scanning process. Both BR and TT's scans had several large holes at the proximal and distal ends of the bone. Furthermore, there were some smaller holes around the rest of the bone. DH's scan had an area of the bone that had been missed on one of the edges. Similarly, DE had missed an area.
+
+```{list-table} __Table 2__: Amount of noise removed after the initial scan for each user
+:header-rows: 1
+
+* - User
+  - Amount of points immediately after the scans
+  - Amount of points after the noise was removed
+  - Noise removed (%)
+* - DE
+  - 463,907
+  - 459,812
+  - &#x2264; 1%
+* - DH
+  - 684,834
+  - 589,192
+  - 14%
+* - BR
+  - 527,644
+  - 439,542
+  - 16%
+* - TT
+  - 512,067
+  - 426,193
+  - 17%
+```
+
+__Second Scan__
+
+Each user immediately scanned the object a second time with an identical methodological approach. During the second scan TT commented how his focus had changed from the equipment to the object. Additionally, TT stated that he was following the shape of the bone with the scanner's head attempting 'dry runs' with the scanner to see whether the bone was in range. On the other hand DH commented how the object is 'different' and 'small' in comparison to the larger objects he would normally scan in mechanical engineering. This would include objects such as a vehicle's chassis or parts that are relatively 'simple' and 'symmetrical' in shape. The user's noise reduction can be seen in table 3.
+
+For both BR and TT, the noise was reduced by over 50% to around 8%. On the other hand both DE and DH's noise increased. The increased noise for DE was marginal (a &#x2264;1% increase to &#x2264;2%) and DH had an 8% increase in noise to 22%. All four digitization's had holes however upon visual inspection the amount had reduced for each user. BR still had a large number of holes though these were concentrated on one of the ends. TT's scan had gotten considerably better with only a small number of holes in comparison to the initial scan. Finally, DH and DE's scan were more complete in comparison to the first scan.
+
+This experiment was undertaken to determine whether the user's experience with the scanner and the understanding of the human skeletal system affected the accuracy of the scan. Due to the similar results obtained by BR and TT it can be determined that knowledge of the anatomy does not affect the scan.
+
+On the other hand, it has been shown quantitatively that __the increased experience the operator has with using the scanner, the better the results are achieved__. Although DH's second scan does not suggest this it should be noted that DH was under an additional time pressure. Therefore, DH's second scan was rushed in comparison to the first attempt. Furthermore, although DE's scan also got worse, the noise recorded was minimal with similar results to section 5.1.2. These results also reiterate the trend lines shown earlier within this subsection.
+
+```{list-table} __Table 3:__ Amount of noise removed after the second scan for each user
+:header-rows: 1
+
+* - User
+  - Amount of points immediately after the scans
+  - Amount of points after the noise was removed
+  - Data reduction (%)
+* - DE
+  - 550,740
+  - 541,268
+  - 2%
+* - DH
+  - 750,130
+  - 582,233
+  - 22%
+* - BR
+  - 346,026
+  - 320,071
+  - 8%
+* - TT
+  - 526,630
+  - 491,354
+  - 7%
+```
+
+## 6. Archiving Surface Scanning Data
+
+The current pressures on osteological collections as a result of poor packaging, storage conditions, and reburial may result in the loss of anatomical landmarks, pathologies or the whole bone. For teaching or within the forensic sciences, bones may need to be used as educational resources or demonstrative evidence. Therefore, proper archival is necessary to ensure easy retrieval in an organised and effective manner, but to also guarantee that there is accurate data to refer to even after the object has disappeared. 
+
+In conjunction with the project level metadata, below is an example of the scan level metadata for both structured light scanning acquisition and registration metadata. Scan level metadata and workflow has been recommended within [Laser Scanning for Archaeology: A Guide to Good Practice|LaserScan_Toc] and an example of this metadata can be found in [Section 4|LaserScan_4-3] of that guide.
+
+### 6.1. Structured Light Scanning
+
+Although structured light scanning and laser scanning come under the umbrella of surface scanning, the structured light scanning process is much different. A basic workflow diagram (figure 10) is shown below and possible metadata formats.
+
+```{figure} /images/struc_light-fig_10.jpg
+:alt: Figure 10
+
+__Figure 10__: Workflow for structured light scanning 
+```
+
+__6.1.1 Object Level Metadata__
+
+```{list-table}
+:header-rows: 1
+
+* - Element
+  - Description
+  - Example
+* - Name of object
+  - Name of object, monument, or area scanned
+  - PKG:14; Sample 1; Human remains
+* - Object Number
+  - The ID number or code, if applicable, of the object or monument
+  - PKG:14; Sample 1
+* - Object Description
+  - Brief description of the monument/object being scanned
+  - Human Tibia: dismembered
+* - Survey Location
+  - Exact location of survey with complete address and/or coordinates
+  - Stephenson Building, Teesside University
+* - Survey Date(s)
+  - Dates(s) of survey
+  - 24/09/2014
+* - Survey Conditions
+  - The conditions during survey (sunny, overcast, indoors, etc.)
+  - Indoors, controlled environment
+```
+
+__6.1.2 Scanner Metadata__
+
+```{list-table}
+:header-rows: 1
+
+* - Element
+  - Description
+  - Example
+* - Scanner Details
+  - Details of the instrument(s) e.g. manufacturer, serial or model number(s) and scan units
+  - Pico Projector
+* - Scanner Resolution
+  -  
+  - 800x600
+* - Operator Name
+  - Details of company and scan operator name
+  - David Errickson
+* - Turntable Used?
+  - Whether a turntable was used during data capture
+  - Yes/No
+* - RGB Data Capture?
+  - If yes, then specify whether: - Internal or external? - Was an additional lighting system used? If yes, then provide a brief description of the lighting system.
+  - Yes/No. Natural light lamps with a photographic tent were used.
+* - Estimated Data Resolution
+  - The estimated points/data resolution across the object
+  - 65,000 points
+* - Total Number of Scans and Images in Project
+  - Total number of scans and images collected
+  - 24 Scans and 288 images
+* - Description of final datasets for archive
+  - What datasets will be archived (include file names if possible)
+  - Any files not documented under Scan-level Metadata (i.e. assoc. images) and Reconstruction Metadata (i.e. final deliverables)
+* - Noise Settings
+  - Noise settings set on scanner
+  - None
+* - Software
+  - Software used for the scanning process
+  - PicoScan3: Mephisto 3.0
+* - Increment Angle
+  - The angle for each scan taken of the object
+  - 30°
+* - Intensity Threshold
+  - Determine if low contrast areas are to be digitised (Usually set low when dark)
+  - 20
+* - Signal Strength
+  - Strength of the returning signal – determine whether poor camera pixels are filtered out
+  - 40
+* - Smoothing
+  - Determining filter quality
+  - None
+* - Additional Project Notes
+  - Any other details (scanner specific)
+  - All scans taken in a light tent
+```
+
+__6.1.3 Camera Metadata__
+
+```{list-table}
+:header-rows: 1
+
+* - Element
+  - Description
+  - Example
+* - Main Geometry Camera
+  - Camera manufacturer
+  - Nikon
+* - Camera Model Name
+  - Model of the camera
+  - D3100
+* - Camera Lens
+  - Lens of the camera
+  - 18-55mm
+* - Shutter Speed
+  - Shutter speed at the time of capture
+  - 1/15s
+* - Aperture Values
+  - Aperture value at the time of capture
+  - f/16
+* - ISO Setting
+  - Camera ISO setting
+  - 100, 200, 400, 800, etc.
+```
+
+__6.1.4 Calibration Metadata__
+
+```{list-table}
+:header-rows: 1
+
+* - Element
+  - Description
+  - Example
+* - Calibration
+  - Whether calibration was achieved, what type of calibration
+  - Yes: Turntable & Geometric.
+* - Calibration board description
+  - The calibration board description.
+  - Green on Green - Purple
+* - Calibration board pattern
+  - Number of patterned squares on the calibration board
+  - 21x14 (11mm squared)
+* - Calibration projector pattern
+  - Number of patterned squares on the projector
+  - 21x14
+* - Calibration images
+  - Number of calibration images taken
+  - 14
+* - Calibration file name
+  - Name of the calibration file
+  - Saw_Sample1_Cal_1.txt
+* - RMS errors
+  - The RMS errors pertaining to the calibration of the camera, projector and system in scan units.
+  - Camera: 0.2; Projector: 0.4; System: 0.2
+```
+
+__6.1.5 Scan-level Metadata__
+
+```{list-table}
+:header-rows: 1
+
+* - Element
+  - Description
+  - Example
+* - Scan Filename
+  - The name of the scan.
+  - A suggested filename for original raw scans for archiving is in this format: ProjectName_scan1.txt.
+* - Additional Scan Notes
+  - Additional notes
+  - None
+* - Associated Images
+  - Raster images associated/captured with each scan
+  - seq01_model.jpg; seq02_model.jpg; seq03_model.jpg; seq04_model.jpg; seq05_model.jpg; etc.
+```
+
+__6.1.6 Reconstruction Metadata__
+
+```{list-table}
+:header-rows: 1
+
+* - Element
+  - Description
+  - Example
+* - Object Filename
+  - Name of the finished digitisation/deliverable
+  - Saw_Sample1_Scan1.PLY
+* - Software 
+  - Software used for the reconstruction of the digitisation
+  - Process
+* - Texture
+  - Whether texture is imported on the scan
+  - Yes
+* - Total Scans
+  - The total number of scans used to create the object
+  - 35
+* - Total points
+  - The total number of points in the finished pointcloud
+  - 1,725,800
+```
+
+## 7. Conclusion
+
+Calibration should always be achieved before any scanning is undertaken. The authors also suggest the use of a black background in a well-lit environment to reduce noise and post processing when using a laser line scanning due to the difficulties in recording this type of surface. Further, for recording osteological material, although knowledge of anatomy is not necessary, it may be important to ensure that pathological features are recorded correctly and not over-looked. An experienced non-contact surface scanner user is suggested to ensure the bone is fully recorded and archival is achieved in accordance with Guides to Good Practice.
+
+## 8. References
+
+Buikstra, J. E. & Ubelaker, D. H. (1994) *Standards for Data Collection from Human Skeletal Remains*. Research Series, no. 44. Arkansas Archaeological Survey, Fayetteville.
+
+Corsarca, C., Jocea, A., Savu, A. (2009). 'Analysis of error sources in terrestrial laser scanning'. In *Proceedings International Scientific Symposium GeoCAD'09*, Alba Lulia, 07 May 2009.
+
+English Heritage (2011) *3D Laser Scanning for Heritage*. https://www.english-heritage.org.uk/publications/3d-laser-scanning-heritage2/
+
+Errickson, D., Thompson, T. J. U., Rankin, B. W. J. (2014) 'The application of 3D visualization of osteological trauma for the courtroom: a critical review'. *Journal of Forensic Radiology and Imaging* __2__: 132-137.
+
+International Standards Organization: General requirements for the competence of testing and calibration laboratories (ISO 17025).
+
+Sommers, P. (2002) Emerging problems in digital evidence. Presented at the Computer Forensics Workshop, September 2002, University of Idaho, Moscow ID.
