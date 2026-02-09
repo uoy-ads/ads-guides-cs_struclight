@@ -12,6 +12,12 @@ All material in this guide is available [open access](https://archaeologydataser
 :alt: ADS Logo
 ```
 
+```{image} hsds_blue_black.png
+:height: 50px
+:align: left
+:alt: HSDS Logo
+```
+
 ## 1. Background to Research for Scanning Osteological Material
 
 An increasing interest in past human behaviour and funerary practises through the likes of archaeology and forensic anthropology has resulted in a rise in the use and analysis of human remains in educational contexts. As a result, the availability of these valuable resources has decreased. What is more concerning is that the increased handling of such valuable material expedites its destruction, especially if the human remains are in poor condition. In other circumstances (especially in the US), osteological data is often repatriated which means further analysis of the skeletal remains is impossible.
